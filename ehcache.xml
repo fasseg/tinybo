@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="true"
+	monitoring="autodetect" dynamicConfig="true">
+	<diskStore path="java.io.tmpdir" />
+	<defaultCache maxElementsInMemory="1000" eternal="false"
+		timeToIdleSeconds="1200" timeToLiveSeconds="1200" overflowToDisk="false"
+		diskPersistent="false" diskExpiryThreadIntervalSeconds="120"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="de.congrace.blog4j.entities.Article"
+		maxElementsInMemory="1000" eternal="false" timeToIdleSeconds="1200"
+		timeToLiveSeconds="1200" overflowToDisk="false" diskPersistent="false"
+		diskExpiryThreadIntervalSeconds="120" memoryStoreEvictionPolicy="LRU" />
+	<cache name="de.congrace.blog4j.entities.Category"
+		maxElementsInMemory="1000" eternal="false" timeToIdleSeconds="1200"
+		timeToLiveSeconds="1200" overflowToDisk="false" diskPersistent="false"
+		diskExpiryThreadIntervalSeconds="120" memoryStoreEvictionPolicy="LRU" />
+	<cache name="de.congrace.blog4j.entities.Footer"
+		maxElementsInMemory="1000" eternal="false" timeToIdleSeconds="1200"
+		timeToLiveSeconds="1200" overflowToDisk="false" diskPersistent="false"
+		diskExpiryThreadIntervalSeconds="120" memoryStoreEvictionPolicy="LRU" />
+	<cache name="de.congrace.blog4j.entities.Tag"
+		maxElementsInMemory="1000" eternal="false" timeToIdleSeconds="1200"
+		timeToLiveSeconds="1200" overflowToDisk="false" diskPersistent="false"
+		diskExpiryThreadIntervalSeconds="120" memoryStoreEvictionPolicy="LRU" />
+</ehcache>

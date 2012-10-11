@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration>
+    <appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{ABSOLUTE} %5p %c:%L - %m%n"/>
+        </layout>
+    </appender>
+
+    <logger name="de.congrace">
+        <level value="${log4j.level.congrace}" />
+    </logger>
+
+    <logger name="org.hibernate.search">
+        <level value="info" />
+    </logger>
+
+    <logger name="org.apache.lucene">
+        <level value="info" />
+    </logger>
+    <logger name="org.springframework.security">
+    	<level value="warn" />
+    </logger>
+    <logger name="net.sf.ehcache">
+    	<level value="debug"/>
+    </logger>
+
+    <root>
+        <priority value="warn" />
+        <appender-ref ref="stdout"/>
+    </root>
+</log4j:configuration>
